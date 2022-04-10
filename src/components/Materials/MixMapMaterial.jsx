@@ -10,7 +10,8 @@ import Night from "./night.jpg"
 
 // import glsl from "babel-plugin-glsl/macro"
 
-const meshUrl = `./meshModel.glb`
+const bulb = `assets/models/bulb.glb`
+const meshModel = `assets/models/meshModel.glb`
 
 class BlendTextureShader extends THREE.ShaderMaterial {
   constructor() {
@@ -93,7 +94,7 @@ const AnimatedBlendTexture = animated("blendTextureShader")
 
 function MixMapMaterial() {
   console.log("mis")
-  const { nodes } = useGLTF(`./src/assets/models/meshModel.glb`)
+  const { nodes } = useGLTF(meshModel)
 
   const [state, set] = useState(false)
 
@@ -155,7 +156,7 @@ function MixMapMaterial() {
 }
 
 function Bulb({ state }) {
-  const { nodes } = useGLTF(`./src/assets/models/bulb.glb`)
+  const { nodes } = useGLTF(bulb)
 
   const [{ colour }] = useSpring(
     {
