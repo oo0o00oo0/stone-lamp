@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.3.3",
+    "@react-three/fiber": "^8.0.10",
+    "babel-plugin-glsl": "^1.0.0",
+    "lamina": "^1.1.11",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-spring": "^9.4.4",
+    "styled-components": "^5.3.5",
+    "three": "^0.139.2",
+    "zustand": "^3.7.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
+  }
+}
